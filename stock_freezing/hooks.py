@@ -115,23 +115,23 @@ doctype_js = {
 # ---------------
 # Hook on document methods and events
 
-doc_events = {
-	"Delivery Note": {
-		"validate":"stock_freezing.events.delivery_note.validate",
-		"on_submit":"stock_freezing.events.delivery_note.update_frozen_stock",
-		"on_cancel":"stock_freezing.events.delivery_note.update_frozen_stock"
-	},
-	"Sales Order": {
-		"validate":"stock_freezing.events.sales_order.validate"
-	},
-	"Purchase Receipt":{
-		"validate":"stock_freezing.events.purchase_receipt.validate"
-	},
-	"Stock Entry": {
-		"on_submit": "stock_freezing.events.stock_entry.on_submit",
-		"on_cancel": "stock_freezing.events.stock_entry.on_cancel"
-	},
-}
+#doc_events = {
+#	"Delivery Note": {
+#		"validate":"stock_freezing.events.delivery_note.validate",
+#		"on_submit":"stock_freezing.events.delivery_note.update_frozen_stock",
+#		"on_cancel":"stock_freezing.events.delivery_note.update_frozen_stock"
+#	},
+#	"Sales Order": {
+#		"validate":"stock_freezing.events.sales_order.validate"
+#	},
+#	"Purchase Receipt":{
+#		"validate":"stock_freezing.events.purchase_receipt.validate"
+#	},
+#	"Stock Entry": {
+#		"on_submit": "stock_freezing.events.stock_entry.on_submit",
+#		"on_cancel": "stock_freezing.events.stock_entry.on_cancel"
+#	},
+#}
 
 # Scheduled Tasks
 # ---------------
