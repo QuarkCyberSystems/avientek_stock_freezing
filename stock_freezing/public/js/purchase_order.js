@@ -5,7 +5,7 @@ frappe.ui.form.on('Purchase Order', {
 				erpnext.utils.map_current_doc({
 					method: "stock_freezing.events.purchase_order.get_sales_orders",
 					source_doctype: "Sales Order",
-					target: me.frm,
+					target: frm,
 					setters: {
 						customer: undefined,
 						delivery_date: undefined,
